@@ -26,6 +26,7 @@ Version 1.4.0
   - Add os_trace_relay service implementation
   - Fixes for idevicesyslog
   - afc: Add afc_get_file_info_plist and afc_get_device_info_plist functions
+  - Add pcapd service implementation and idevicepcap tool for forensic network capture
   ... and several other internal changes
 
 

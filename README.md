@@ -43,6 +43,7 @@ to:
 * Simulate changed geolocation of the device (requires mounted developer image)
 * Relay the syslog of the device
 * Expose a connection for WebKit remote debugging
+* Capture device network traffic with process attribution for forensic analysis
 
 ... and much more.
 
@@ -144,6 +145,7 @@ The library bundles the following command-line utilities in the tools directory:
 | `idevicename`              | Display or set the device name                                     |
 | `idevicenotificationproxy` | Post or observe notifications on a device                          |
 | `idevicepair`              | Manage host pairings with devices and usbmuxd                      |
+| `idevicepcap`              | Capture network traffic from a device with process attribution     |
 | `ideviceprovision`         | Manage provisioning profiles on a device                           |
 | `idevicescreenshot`        | Gets a screenshot from the connected device                        |
 | `idevicesetlocation`       | Simulate location on device                                        |

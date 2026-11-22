@@ -1,0 +1,17 @@
+{
+  "root": "/home/dev/feedback/uid34522",
+  "B": "/home/dev/feedback/uid34522",
+  "sha": "9992afce840511ed0f9c05c136829c7ebd415059",
+  "wslDistro": "Ubuntu-26.04",
+  "source": {
+    "owner": "libimobiledevice",
+    "repo": "libimobiledevice",
+    "sha": "9992afce840511ed0f9c05c136829c7ebd415059"
+  },
+  "fork": {
+    "owner": "Rrr119",
+    "repo": "libimobiledevice",
+    "cloneUrl": "https://github.com/Rrr119/libimobiledevice.git"
+  },
+  "at": "2026-11-22T21:49:30.169Z"
+}

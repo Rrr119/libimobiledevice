@@ -59,7 +59,8 @@ libimobiledevice_1_0_la_SOURCES = \
 	reverse_proxy.c reverse_proxy.h \
 	syslog_relay.c syslog_relay.h \
 	ostrace.c ostrace.h \
-	bt_packet_logger.c bt_packet_logger.h
+	bt_packet_logger.c bt_packet_logger.h \
+	pcapd.c pcapd.h
 
 if WIN32
 libimobiledevice_1_0_la_LDFLAGS += -avoid-version -static-libgcc

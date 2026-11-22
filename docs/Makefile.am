@@ -18,6 +18,7 @@ man_MANS = \
 	idevicedebug.1 \
 	idevicedevmodectl.1 \
 	idevicenotificationproxy.1 \
+	idevicepcap.1 \
 	idevicesetlocation.1 \
 	afcclient.1
 

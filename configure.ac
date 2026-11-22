@@ -336,6 +336,7 @@ src/Makefile
 src/libimobiledevice-1.0.pc
 include/Makefile
 tools/Makefile
+tests/Makefile
 cython/Makefile
 docs/Makefile
 doxygen.cfg

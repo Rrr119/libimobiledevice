@@ -1,0 +1,76 @@
+.TH "idevicepcap" 1
+.SH NAME
+idevicepcap \- Capture network traffic from a device.
+.SH SYNOPSIS
+.B idevicepcap
+[OPTIONS]
+
+.SH DESCRIPTION
+
+Capture network traffic from an iOS device using the device's
+.B com.apple.pcapd
+service. The device must be paired with this host. Each captured packet includes
+the process that owns the socket; this metadata is stored as a packet comment in
+PCAPNG output and is printed to standard error while capturing.
+
+.SH OPTIONS
+.TP
+.B \-u, \-\-udid UDID
+Target specific device by UDID.
+.TP
+.B \-n, \-\-network
+Connect to network device.
+.TP
+.B \-o, \-\-output FILE
+Write captured packets to FILE. The default is
+.B capture.pcapng.
+Use
+.B -
+to write to standard output.
+.TP
+.B \-f, \-\-format FORMAT
+Select the output format:
+.B pcapng
+(default) or
+.B pcap.
+.TP
+.B \-c, \-\-count N
+Stop after N captured packets. The default is unlimited; press CTRL+C to stop.
+.TP
+.B \-p, \-\-process NAME|PID
+Only capture packets owned by this process, or by this process ID. Both the
+socket-owning process and the effective process are matched.
+.TP
+.B \-i, \-\-interface NAME
+Only capture packets on this interface. Use the full name such as
+.B en0,
+or the interface name without its unit such as
+.B en
+to match every unit.
+.TP
+.B \-P, \-\-pair
+Validate or create the host pairing before capture. If the device has not been
+paired yet, accept the trust dialog on the device.
+.TP
+.B \-q, \-\-quiet
+Do not print a one-line packet summary on standard error.
+.TP
+.B \-d, \-\-debug
+Enable communication debugging.
+.TP
+.B \-h, \-\-help
+Prints usage information.
+.TP
+.B \-v, \-\-version
+Prints version information.
+
+.SH NOTES
+
+The device must be unlocked and trusted by this host. Traffic from interfaces
+without a link-layer header is given a synthetic Ethernet header so the capture
+can be opened by standard tools such as Wireshark and tshark.
+
+.SH ON THE WEB
+https://libimobiledevice.org
+
+https://github.com/libimobiledevice/libimobiledevice
